@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Payment Successful</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Successful | PaperLive</title>
 
 <style>
     body {
         margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
         background: #f4f6f8;
         display: flex;
         justify-content: center;
@@ -16,56 +16,56 @@
         height: 100vh;
     }
 
-    .container {
-        background: #fff;
+    .wrapper {
+        background: #ffffff;
         width: 420px;
         border-radius: 10px;
-        box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         overflow: hidden;
     }
 
     .header {
-        background: #f2f2f2;
+        background: #ffffff;
+        padding: 25px;
         text-align: center;
-        padding: 30px 20px 50px;
-        position: relative;
+        border-bottom: 1px solid #eee;
     }
 
-    .check-circle {
+    .header img {
+        height: 40px;
+    }
+
+    .status {
+        text-align: center;
+        padding: 30px 20px 10px;
+    }
+
+    .check {
         width: 70px;
         height: 70px;
-        background: #19a974;
+        background: #1dbf73;
         border-radius: 50%;
-        margin: 0 auto;
+        margin: 0 auto 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        font-size: 36px;
+        color: #fff;
+        font-size: 34px;
         font-weight: bold;
-        position: absolute;
-        left: 50%;
-        bottom: -35px;
-        transform: translateX(-50%);
     }
 
-    .content {
-        padding: 60px 30px 30px;
-        text-align: center;
-    }
-
-    .content h2 {
-        margin-bottom: 20px;
-        color: #444;
+    .status h2 {
+        margin: 10px 0;
+        color: #222;
     }
 
     .details {
+        margin: 20px;
         background: #fafafa;
         border-radius: 8px;
         padding: 20px;
-        text-align: left;
         font-size: 14px;
-        color: #555;
+        color: #333;
     }
 
     .row {
@@ -75,15 +75,15 @@
     }
 
     .row strong {
-        color: #222;
+        font-weight: 600;
     }
 
     .total {
         border-top: 1px solid #ddd;
-        padding-top: 10px;
+        padding-top: 12px;
         margin-top: 10px;
-        font-weight: bold;
         font-size: 16px;
+        font-weight: bold;
     }
 
     .footer {
@@ -91,53 +91,55 @@
         padding: 15px;
         font-size: 12px;
         color: #777;
+        border-top: 1px solid #eee;
     }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
     <div class="header">
-        <h2>Payment Successful</h2>
-        <div class="check-circle">✓</div>
+        <!-- Replace this with PaperLive logo URL -->
+        <img src="https://www.paperlive.in/wp-content/uploads/2023/06/logo.png" alt="PaperLive Logo">
     </div>
 
-    <div class="content">
-        <h2>Your payment was successful</h2>
+    <div class="status">
+        <div class="check">✓</div>
+        <h2>Payment Successful</h2>
+    </div>
 
-        <div class="details">
-            <div class="row">
-                <span>Merchant</span>
-                <span>ADAZPAPERLIVE LEARNING LLP</span>
-            </div>
-            <div class="row">
-                <span>Payment ID</span>
-                <span>4767669465</span>
-            </div>
-            <div class="row">
-                <span>Order ID</span>
-                <span>2998669008</span>
-            </div>
-            <div class="row">
-                <span>Payment Method</span>
-                <span>Card</span>
-            </div>
-            <div class="row">
-                <span>Date / Time</span>
-                <span>28-12-2025 / 11:25 AM</span>
-            </div>
+    <div class="details">
+        <div class="row">
+            <span>Merchant</span>
+            <strong>ADAZPAPERLIVE LEARNING LLP</strong>
+        </div>
+        <div class="row">
+            <span>Payment ID</span>
+            <strong>4767669465</strong>
+        </div>
+        <div class="row">
+            <span>Order ID</span>
+            <strong>2998669008</strong>
+        </div>
+        <div class="row">
+            <span>Payment Method</span>
+            <strong>Card</strong>
+        </div>
+        <div class="row">
+            <span>Date & Time</span>
+            <strong>28-12-2025 | 11:25 AM</strong>
+        </div>
 
-            <div class="row total">
-                <span>Total Paid</span>
-                <span>₹59,999</span>
-            </div>
+        <div class="row total">
+            <span>Total Paid</span>
+            <span>₹59,999</span>
         </div>
     </div>
 
     <div class="footer">
-        This payment was processed securely.
+        This transaction was processed securely by PaperLive.
     </div>
 
 </div>
